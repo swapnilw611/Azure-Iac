@@ -1,6 +1,6 @@
 locals{
   resource_group_name = "myrg"
-  location = "SouthIndia"
+  location = "southindia"
 
   virtual_network = {
     name = "v1-network"
