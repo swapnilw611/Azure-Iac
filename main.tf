@@ -15,11 +15,12 @@ locals{
 
 
 }
-resource "azurerm_resource_group" "rg" {
-  name     = local.resource_group_name
-  location = local.location
 
-}
+# resource "azurerm_resource_group" "rg" {
+#   name     = local.resource_group_name
+#   location = local.location
+
+# }
 
 # # Virtual Network
 # resource "azurerm_virtual_network" "vnet1" {
