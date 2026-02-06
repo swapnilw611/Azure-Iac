@@ -32,7 +32,7 @@ resource "azurerm_monitor_metric_alert" "cpu-utilization" {
 
 #memory-utilization
   resource "azurerm_monitor_metric_alert" "memory-utilization" {
-  name                = "example-metricalert"
+  name                = "example-metricalert1"
   resource_group_name = azurerm_resource_group.rg.name
   scopes              = [azurerm_linux_virtual_machine.vm.id]
   description         = "Action will be triggered when Memmory is less than 20%"
