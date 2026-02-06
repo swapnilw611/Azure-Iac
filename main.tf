@@ -21,12 +21,6 @@ resource "azurerm_resource_group" "rg" {
 
 }
 
-resource "azurerm_resource_group" "rg1" {
-  name     = "rg123"
-  location = local.location
-
-}
-
 # Virtual Network
 resource "azurerm_virtual_network" "vnet1" {
   name                = local.virtual_network.name
@@ -76,7 +70,7 @@ resource "azurerm_public_ip" "public-ip1" {
   tags = {
     environment = "test"
   }
-  depends_on = [ local.resource_group_name ]
+  depends_on = [ azurerm_resource_group.rg ]
 }
 
 # Network Security Group
