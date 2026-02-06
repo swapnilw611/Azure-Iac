@@ -1,5 +1,5 @@
 variable "admin_username" {
-  default = "admin"
+  default = "adminuser"
 }
 
 variable "admin_password" {
