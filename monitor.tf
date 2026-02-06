@@ -14,7 +14,6 @@ resource "azurerm_monitor_metric_alert" "cpu-utilization" {
   resource_group_name = azurerm_resource_group.rg.name
   scopes              = [azurerm_linux_virtual_machine.vm.id]
   description         = "Action will be triggered when CPU is greater than 60%."
-
   criteria {
     metric_namespace = "Microsoft.Compute/virtualMachines"
     metric_name      = "Percentage CPU"
